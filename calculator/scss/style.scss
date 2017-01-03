@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+$cal-width: 300px;
+$cal-bt-height: 50px;
+$cal-padding: 10px;
+$cal-btRowCnt: 4;
+
+.mainContent {
+  margin-top: 20px;
+}
+
+.screen {
+  height: 50px;
+  width: $cal-width;
+  padding-top:5px;
+  padding-right: $cal-padding;
+  padding-left: $cal-padding;
+  background-color: #1D3037;
+  color: #FFFFFF;
+  font-family: play;
+  font-size:35px;
+}
+
+.infoScreen {
+  width: $cal-width;
+  padding-right: $cal-padding;
+  padding-left: $cal-padding;
+  height: 20px;
+  background-color: #1D3037;
+  color: #E1E3E4;
+  font-family: play;
+}
+
+.historyContainer {
+  margin-top: 20px;
+}
+
+//.buttonsContainer {
+//  width: $cal-width;
+//}
+
+.buttonsTable {
+  background-color: #00A5C6;
+  width: $cal-width;
+  table-layout: fixed;
+  border-spacing: $cal-padding;
+  border-collapse: separate;
+}
+
+.btn {
+  font-family: Play;
+  border: 0 none;
+  border-radius:0;
+}
+
+.btn-primary:hover {
+  box-shadow:2px 2px 5px #333333;
+}
+
+.btn-primary {
+  font-size: 25px;
+  background: #0099cc;
+  color: #FFFFFF;
+  width: 100%;
+  height: $cal-bt-height;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #1D3037;
+}
+
+.specialButton {
+  background-color: #0989A2;
+}
+
+.specialButtonForPlus {
+  background-color: #0989A2;
+  height: $cal-padding + $cal-bt-height * 2;
+}
+
+.numberButton {
+  background-color: #0D6274;
+}

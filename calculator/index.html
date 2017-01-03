@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>History Calculator</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">History Calculator by Peter Deng</a>
+    </div>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-md-6 mainContent" align="center">
+      <div class="screen text-right">0</div>
+      <div class="infoScreen text-right"></div>
+      <table class="buttonsTable">
+        <tr>
+          <td ><button type='C' class="btn btn-primary specialButton">C</button></td>
+          <td ><button type='!' class="btn btn-primary specialButton">+/-</button></td>
+          <td ><button type='%' class="btn btn-primary specialButton">%</button></td>
+          <td ><button type='Ope' value='/' class="btn btn-primary specialButton">&#247;</button></td>
+        </tr>
+        <tr>
+          <td ><button type='Num' value='7' class="btn btn-primary numberButton">7</button></td>
+          <td ><button type='Num' value='8' class="btn btn-primary numberButton">8</button></td>
+          <td ><button type='Num' value='9' class="btn btn-primary numberButton">9</button></td>
+          <td ><button type='Ope' value='x' class="btn btn-primary specialButton">&#215;</button></td>
+        </tr>
+        <tr>
+          <td ><button type='Num' value='4' class="btn btn-primary numberButton">4</button></td>
+          <td ><button type='Num' value='5' class="btn btn-primary numberButton">5</button></td>
+          <td ><button type='Num' value='6' class="btn btn-primary numberButton">6</button></td>
+          <td ><button type='Ope' value='-' class="btn btn-primary specialButton">&#8722;</button></td>
+        </tr>
+        <tr>
+          <td ><button type='Num' value='1' class="btn btn-primary numberButton">1</button></td>
+          <td ><button type='Num' value='2' class="btn btn-primary numberButton">2</button></td>
+          <td ><button type='Num' value='3' class="btn btn-primary numberButton">3</button></td>
+          <td rowspan="2"><button type='Ope' value='+' class="btn btn-primary specialButtonForPlus">+</button></td>
+        </tr>
+        <tr>
+          <td ><button type='Num' value='0' class="btn btn-primary numberButton">0</button></td>
+          <td ><button type='.' class="btn btn-primary numberButton">.</button></td>
+          <td ><button type='=' class="btn btn-primary numberButton">=</button></td>
+        </tr>
+      </table>
+  </div>
+  
+  <div class="col-md-6 table-responsive historyContainer">
+    <table class="table">
+      <thead>
+        <tr>
+          <th><button type='ClH' class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Clear History</button></th>
+        </tr>
+      </thead>
+      <tbody class="resultHistory">
+        <!--
+        <tr>
+          <td>
+          <button id="HNum" value="1" class="btn btn-info">1</button> + <button id="HNum" value="3" class="btn btn-info">3</button> = <button id="HNum" value="4" class="btn btn-info">4</button>
+          </td>
+        </tr>
+-->
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='lib/decimal.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
